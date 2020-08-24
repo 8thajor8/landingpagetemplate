@@ -1,0 +1,344 @@
+body {
+  width: 100%;
+  height: 100%;
+  /*font-family: Arial;*/
+}
+
+
+.jumbotron{
+	background: url(./assets/jumbotronimage.jpg) no-repeat top center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 10rem 1rem;
+	position: relative;
+
+
+}
+.jumbotron > .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background:#000;
+    opacity:0.4;
+    z-index: 1;
+
+
+  	
+}
+
+#type1jumbotron{
+	margin-left: 15px;
+	margin-right: auto;
+	padding: 20px;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 1px #666;
+	position: relative;
+    z-index: 2;
+
+	
+}
+
+hr{
+	width: 25%;
+	margin-left: 0px;
+	border-color: #FFFFFF;
+}
+
+.btn{
+	margin-top:10px;
+	background-color: rgb(84,175,175);
+	border-color: rgb(84,175,175);
+	border-radius: 20px
+
+}
+
+
+#separator{
+	font-size: 1.5em;
+	font-weight: 200;
+
+}
+
+.separatorbox{
+	background-color: rgb(84,175,175);
+}
+
+span{
+	font-weight: 450;
+}
+
+.carimage{
+	height: 60vh;	
+}
+
+.drk:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:#000;
+    opacity:0.4;
+}
+#features{
+	padding-top: 50px;
+	background-color: rgb(248, 249, 250);
+}
+
+.featuretitle{
+	font-size: 2.5rem;
+	font-weight: 250;
+}
+
+.featurecard{
+	margin-top: 20px;
+	margin-bottom: 60px;
+	font-size: 1.1rem;
+}
+.featurecard > img{
+	width: 120px ;
+	height: 120px;
+	border-radius: 90px;
+	transition: all 0.5s
+}
+
+.featurecard > img:hover{
+	background:#000;
+    opacity:0.3;
+}
+
+.featurecard > div{
+	font-weight: bold;
+}
+.featurecard > p{
+	font-weight: 200;
+}
+
+.jumbotext{
+	background:url(./assets/jumbotext.jpg)no-repeat top center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: : 1fr 2fr;
+	
+}
+
+@media only screen and (max-width: 768px) {
+  .jumbotext {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    grid-row-gap: 100px;
+  }
+}
+
+#jumbotextA{
+	grid-row: 1 / span 2;
+
+}
+
+#jumbotextB{
+	background-color: rgb(84,175,175);
+	font-size: 2.5em;
+	font-weight: 250;
+	/*text-shadow: 1px 1px 1px #666;*/
+	padding: 8% 3%;
+
+}
+
+
+
+#jumbotextC{
+	position: relative;
+}
+
+#jumbotextC>.blur{
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background:#000;
+    opacity:0.4;
+    z-index: 1;
+}
+
+.overblur{
+	position: relative;
+    z-index: 2;
+    padding: 5% 18% 5% 5%;
+	font-size: 1.2em;
+	font-weight: 350;
+}
+
+.overblurbottom{
+	position: relative;
+    z-index: 2;
+    padding: 1% 3% 5%;
+	font-size: 1.2em;
+	font-weight: 250;
+}
+
+.teamtittle{
+	font-size: 2.5rem;
+	font-weight: 250;
+	margin: 0% 0% 3% 0%; 
+}
+
+#teamgrid{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 25px;
+	padding: 0%;
+}
+
+.membermain{
+	grid-column: 2;
+	grid-row: 1 / span 3;
+	background-color: rgb(84,175,175, 0.7);
+	display: inline-block;
+	border-radius: 10px;
+	position:relative;
+	margin:0% 25% 0% 0%;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+
+}
+
+
+.membermain>img{
+	width: 100% ;
+	border-radius: 12px 12px 0px 0px;
+	
+}
+
+.membermaintext{
+	margin: 10% 6%;
+	font-weight: 400;
+	font-size: 1.1rem;
+}
+
+.member1{
+	background-color: #F0F0F0;
+	display: flex;
+	border-radius: 10px;
+	position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    padding: 2% 2% 0% 2%;
+    margin: 0% 5% 0% 12%;
+}
+
+.membermain:before, .membermain:after .member1:before, .member1:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.membermain:after .member1:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+    -moz-transform:skew(8deg) rotate(3deg);
+    -ms-transform:skew(8deg) rotate(3deg);
+    -o-transform:skew(8deg) rotate(3deg);
+    transform:skew(8deg) rotate(3deg);
+}
+
+.member1>img{
+	width: 100px ;
+	height: 100px;
+	border-radius: 90px;
+	margin: 1%;
+	-webkit-box-shadow:rgba(256,256,256,0.8) 0px 8px 15px, inset rgba(256,256,256,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(256,256,256,0.8) 0px 8px 15px, inset rgba(256,256,256,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(256,256,256,0.8) 0px 8px 15px, inset rgba(256,256,256,0.15) 0px -10px 20px;
+    box-shadow:rgba(256,256,256,0.8) 0px 8px 15px, inset rgba(256,256,256,0.15) 0px -10px 20px;
+}
+
+.membertext{
+	margin: 1% 2%;
+	font-weight: 350;
+	font-size: 1.1rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+  #teamgrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    grid-row-gap: 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+.membermain  {
+    grid-column: 1;
+    margin: 0 7%;
+
+    
+  }
+  .member1 {
+    grid-column: 1;
+    margin: 0 7%;
+}
+}
+
+.servicetype{
+	width: 60%;
+	margin: auto;
+}
+.serviceimage>img{
+	width: 25vw;
+}
+.lefttext{
+	padding-left: 5%;
+}
+
+.servicecontent>p{
+	font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #4E4E4E;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+.servicetype {
+    width: 90%;
+    flex-direction: column !important;
+    }
+    .lefttext  {
+    width: 100%;
+    text-align: center;
+    }
+    .serviceimage  {
+    width: 100%;
+    }
+    .serviceimage>img{
+	width: 80vw;
+}
+}
