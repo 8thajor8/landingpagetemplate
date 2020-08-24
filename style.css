@@ -194,12 +194,16 @@ span{
 	margin: 0% 0% 3% 0%; 
 }
 
+#theteam{
+	padding: 3%;
+}
+
 #teamgrid{
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	grid-template-rows: repeat(3, 1fr);
 	grid-gap: 25px;
-	padding: 0%;
+	padding: 2%;
 }
 
 .membermain{
@@ -286,25 +290,31 @@ span{
 
 
 @media only screen and (max-width: 768px) {
-  #teamgrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 1em;
-    grid-row-gap: 60px;
-  }
+
+  	#teamgrid {
+		display: grid;
+		grid-template-columns: 1fr;
+		padding: 0%;
+		grid-row-gap: 60px;
+		margin: 10% 0%;
+		}
+  	.membermain  {
+    	grid-column: 1;
+    	margin: 0%;
+		}
+	.member1 {
+    	grid-column: 1;
+    	display: inline-block;
+    	margin: 0 1%;
+    	text-align:  center;
+	}
+	.teamtittle{
+		padding: 10%;
+	}
 }
 
 @media only screen and (max-width: 768px) {
-.membermain  {
-    grid-column: 1;
-    margin: 0%;
 
-    
-  }
-  .member1 {
-    grid-column: 1;
-    margin: 0 1%;
-}
 }
 
 .servicetype{
