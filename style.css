@@ -297,13 +297,13 @@ span{
 @media only screen and (max-width: 768px) {
 .membermain  {
     grid-column: 1;
-    margin: 0 7%;
+    margin: 0%;
 
     
   }
   .member1 {
     grid-column: 1;
-    margin: 0 7%;
+    margin: 0 1%;
 }
 }
 
