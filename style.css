@@ -52,7 +52,7 @@ hr{
 	margin-top:10px;
 	background-color: rgb(84,175,175);
 	border-color: rgb(84,175,175);
-	border-radius: 20px
+	border-radius: 25px
 
 }
 
@@ -106,6 +106,7 @@ span{
 	height: 120px;
 	border-radius: 90px;
 	transition: all 0.5s
+
 }
 
 .featurecard > img:hover{
@@ -188,7 +189,7 @@ span{
 	font-weight: 250;
 }
 
-.teamtittle{
+.sectionTittle{
 	font-size: 2.5rem;
 	font-weight: 250;
 	margin: 0% 0% 3% 0%; 
@@ -351,4 +352,85 @@ span{
     .serviceimage>img{
 	width: 80vw;
 }
+}
+
+.productCatalogue{
+	padding: 4%  0%;
+}
+
+.carouselCatalogue{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+	grid-gap: 10px;
+	justify-items: center;
+	padding: 1%;
+}
+
+
+.catalogueItem{
+
+	border-radius: 15px;
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    position: relative;
+    z-index: 2;
+    transition: all 0.2s ease-in-out;
+}
+
+.catalogueText{
+	padding: 5%;
+	position: relative;
+    z-index: 2;
+
+}
+
+.catalogueText>h4{
+	font-weight: 700;
+	color: white;
+	margin: 5% 2%;
+
+}
+
+.catalogueText>p{
+	font-weight: 450;
+	font-size: 1.1em;
+	color: white;
+	margin: 18% 2%;
+	opacity: 0;
+	transition: all 0.3s linear;
+
+}
+
+.catalogueItem:hover p, .catalogueItem:hover .catalogueButton{
+
+	opacity: 1;
+}
+
+.catalogueItemOverlay{
+	transition: all 1s linear;
+	border-radius: 15px;
+}
+.catalogueItem:hover .catalogueItemOverlay{
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background:#000;
+    opacity:0.4;
+    z-index: 1;
+
+}
+.catalogueButton{
+	padding: 3% 25%;
+	margin: 7% 5%;
+	opacity: 0;
+	transition: all 0.3s linear;
+	position: relative;
+    z-index: 2;
+}
+
+.catalogueItem:hover{
+	transform: scale(1.03);
 }
