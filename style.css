@@ -429,8 +429,123 @@ span{
 	transition: all 0.3s linear;
 	position: relative;
     z-index: 2;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
 }
 
 .catalogueItem:hover{
 	transform: scale(1.03);
+}
+
+.contactUs{
+	background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+
+}
+.contactContainer{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 40px;
+	padding: 5% 20%
+
+
+}
+
+.contactLeft{
+	display: grid;
+	grid-template-rows: 2fr 1fr 1fr 1fr;
+	grid-gap: 20px;
+	padding-right: 8%;
+
+	
+}
+
+.text-white-bord{
+	
+	font-weight: 400;
+	color:	#fff;
+	text-shadow: 0.7px 0.7px 5px #000;
+
+}
+
+.contactBox hr{
+	width: 80%;
+	text-align:center;
+
+}
+
+.contactLeft h5{
+	font-size: 2.5rem;
+	text-shadow: 0.7px 0.7px 5px #000;
+	margin-bottom: 6%;
+}
+
+.contactBox{
+	display: flex;
+	align-items: center;
+
+}
+
+.contactBox i{
+
+	align-items: center;
+	padding-right: 5%;
+	font-size: 2.5rem;
+	color: #fff;
+	text-shadow: 0.7px 0.7px 5px #000;
+}
+.justTheText{
+
+}
+
+
+/*line-height: 30px;*/
+.contactUsHeader{
+	font-size: 1.2rem;
+    line-height: 23px;
+    font-weight: 500;
+}
+.contactFormCont{
+	display: inline-block;
+	padding: 12% ;
+	background-color: #fff;
+	border-radius: 15px;
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+button{
+	border: 0px;
+	background: transparent;
+
+}
+
+button a{
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+ .input-bg{
+	background-color: #f7f7f7;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 10px 20px;
+    width: 100%;
+    
+    
+}
+
+textarea{
+	min-height: 130px;
+}
+
+.contactFormCont-Tittle{
+	font-weight: 250;
+	color: #232323;
+	font-size: 1.8rem;
+	text-align: center;
+	margin-bottom: 5%;
+
 }
