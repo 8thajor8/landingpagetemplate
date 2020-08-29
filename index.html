@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">   <!-- Bootstrap CSS from a CDN.-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/> <!-- Animate CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- AOS -->
+    
     <link rel="stylesheet" type="text/css" href="style.css">  <!-- Your own stylesheet -->
     <script src="https://kit.fontawesome.com/55d940ec4a.js" crossorigin="anonymous"></script>
 </head>
@@ -194,28 +196,28 @@
 <section id="theteam" class="bg-light">
   <h2 class="sectionTittle text-center">Meet <strong>Our Team</strong></h2>
   <div id="teamgrid">
-    <div class="member1">
+    <div class="member1" data-aos="fade-down-right" >
       <img src="./assets/otterson.jpg">
       <section class="membertext">
         <p class="font-italic"><strong>"</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <p>-Otter Otterson</p>
       </section>
     </div>  
-    <div class="member1">
+    <div class="member1" data-aos="fade-right" >
       <section class="membertext">
         <p class="font-italic"><strong>"</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <p>-Ottelius Jacobson</p>
       </section>
       <img src="./assets/ottelius.jpg">
     </div>  
-    <div class="member1">
+    <div class="member1" data-aos="fade-up-right" >
       <img src="./assets/ottira.jpg">
       <section class="membertext">
         <p class="font-italic"><strong>"</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <p>-Ottira Otterovskovich</p>
       </section>
     </div>  
-    <div class="membermain">
+    <div class="membermain" data-aos="flip-up"  data-aos-offset="500">
       <img src="./assets/chorchi.jpg">
       <section class="membermaintext text-white">
         <p class="font-italic"><strong>"</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
@@ -241,7 +243,7 @@
 
 <!-- Section Type 8: Services -->
 <div class="servicetypes p-2">
-  <div class="servicetype d-flex justify-content-center align-items-center p-3 ">
+  <div class="servicetype d-flex justify-content-center align-items-center p-3 " data-aos="zoom-out-right" >
     <div class="serviceimage m-4">
       <img src="./assets/service1.jpg" alt="">
     </div>
@@ -253,7 +255,7 @@
       </div>
     </div>
   </div>
-  <div class="servicetype d-flex justify-content-center align-items-center p-3 ">
+  <div class="servicetype d-flex justify-content-center align-items-center p-3 "  data-aos="zoom-out-left" >
     <div class="lefttext">
       <div class="servicecontent">
       <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
@@ -265,7 +267,7 @@
       <img src="./assets/service2.jpg" alt="">
     </div>
   </div>
-  <div class="servicetype d-flex justify-content-center align-items-center p-3 ">
+  <div class="servicetype d-flex justify-content-center align-items-center p-3" data-aos="zoom-out-right" d>
     <div class="serviceimage">
       <img src="./assets/service3.png" alt="">
     </div>
@@ -293,69 +295,78 @@
 <!-- Section Type: Catalogue -->
 <section class="productCatalogue">
   <h2 class="sectionTittle text-center">Our <strong>Products Example</strong></h2>
-  <div class="carouselCatalogue">
-    <div class="catalogueItem" style="background: url(./assets/product1.png) no-repeat top center;">
-      <div class="catalogueItemOverlay"></div>
-      <div class="catalogueText">
-        <h4>No-fee international transfers</h4>
-        <p>Transfer money worldwide, right away, and with no hidden charges. All currency conversions are at the interbank rate.</p>
+  <div class="animationTest">
+    <div class="carouselCatalogue">
+      <div class="catalogueItem" style="background: url(./assets/product1.png) no-repeat top center;">
+        <div class="catalogueItemOverlay"></div>
+        <div class="catalogueText">
+          <h4>No-fee international transfers</h4>
+          <p>Transfer money worldwide, right away, and with no hidden charges. All currency conversions are at the interbank rate.</p>
+        </div>
+        <div style="text-align: center;">
+          <a class="btn btn-primary btn-lg catalogueButton" href="/send-money-abroad" color="black" class="styles__StyledButton-ethqdb-0-a styles__StyledAnchorButton-ethqdb-1 bofyUK styles__StyledButton-sc-1rfsx88-4 hwpdAW" type="primary">Learn more</a>
+        </div>
       </div>
-      <div style="text-align: center;">
-        <a class="btn btn-primary btn-lg catalogueButton" href="/send-money-abroad" color="black" class="styles__StyledButton-ethqdb-0-a styles__StyledAnchorButton-ethqdb-1 bofyUK styles__StyledButton-sc-1rfsx88-4 hwpdAW" type="primary">Learn more</a>
+
+      <div class="catalogueItem" style="background: url(./assets/product2.jpeg) no-repeat top center;">
+        <div class="catalogueItemOverlay"></div>
+        <div class="catalogueText">
+          <h4>No-fee international transfers</h4>
+          <p>Transfer money worldwide, right away, and with no hidden charges. All currency conversions are at the interbank rate.</p>
+        </div>
+        <div style="text-align: center;">
+          <a class="btn btn-primary btn-lg catalogueButton" href="/send-money-abroad" color="black" class="styles__StyledButton-ethqdb-0-a styles__StyledAnchorButton-ethqdb-1 bofyUK styles__StyledButton-sc-1rfsx88-4 hwpdAW" type="primary">Learn more</a>
+        </div>
       </div>
-    </div>
-    <div class="catalogueItem" style="background: url(./assets/product2.jpeg) no-repeat top center;">
-      <div class="catalogueItemOverlay"></div>
-      <div class="catalogueText">
-        <h4>No-fee international transfers</h4>
-        <p>Transfer money worldwide, right away, and with no hidden charges. All currency conversions are at the interbank rate.</p>
+
+      <div class="catalogueItem" style="background: url(./assets/product3.jpg) no-repeat top center;">
+        <div class="catalogueItemOverlay"></div>
+        <div class="catalogueText">
+          <h4>No-fee international transfers</h4>
+          <p>Transfer money worldwide, right away, and with no hidden charges. All currency conversions are at the interbank rate.</p>
+        </div>
+        <div style="text-align: center;">
+          <a class="btn btn-primary btn-lg catalogueButton" href="/send-money-abroad" color="black" class="styles__StyledButton-ethqdb-0-a styles__StyledAnchorButton-ethqdb-1 bofyUK styles__StyledButton-sc-1rfsx88-4 hwpdAW" type="primary">Learn more</a>
+        </div>
       </div>
-      <div style="text-align: center;">
-        <a class="btn btn-primary btn-lg catalogueButton" href="/send-money-abroad" color="black" class="styles__StyledButton-ethqdb-0-a styles__StyledAnchorButton-ethqdb-1 bofyUK styles__StyledButton-sc-1rfsx88-4 hwpdAW" type="primary">Learn more</a>
+
+      <div class="catalogueItem" style="background: url(./assets/product4.jpg) no-repeat top center;">
+        <div class="catalogueItemOverlay"></div>
+        <div class="catalogueText">
+          <h4>No-fee international transfers</h4>
+          <p>Transfer money worldwide, right away, and with no hidden charges. All currency conversions are at the interbank rate.</p>
+        </div>
+        <div style="text-align: center;">
+          <a class="btn btn-primary btn-lg catalogueButton" href="/send-money-abroad" color="black" class="styles__StyledButton-ethqdb-0-a styles__StyledAnchorButton-ethqdb-1 bofyUK styles__StyledButton-sc-1rfsx88-4 hwpdAW" type="primary">Learn more</a>
+        </div>
       </div>
-    </div>
-    <div class="catalogueItem" style="background: url(./assets/product3.jpg) no-repeat top center;">
-      <div class="catalogueItemOverlay"></div>
-      <div class="catalogueText">
-        <h4>No-fee international transfers</h4>
-        <p>Transfer money worldwide, right away, and with no hidden charges. All currency conversions are at the interbank rate.</p>
+
+      <div class="catalogueItem" style="background: url(./assets/product5.jfif) no-repeat top center;">
+        <div class="catalogueItemOverlay"></div>
+        <div class="catalogueText">
+          <h4>No-fee international transfers</h4>
+          <p>Transfer money worldwide, right away, and with no hidden charges. All currency conversions are at the interbank rate.</p>
+        </div>
+        <div style="text-align: center;">
+          <a class="btn btn-primary btn-lg catalogueButton" href="/send-money-abroad" color="black" class="styles__StyledButton-ethqdb-0-a styles__StyledAnchorButton-ethqdb-1 bofyUK styles__StyledButton-sc-1rfsx88-4 hwpdAW" type="primary">Learn more</a>
+        </div>
       </div>
-      <div style="text-align: center;">
-        <a class="btn btn-primary btn-lg catalogueButton" href="/send-money-abroad" color="black" class="styles__StyledButton-ethqdb-0-a styles__StyledAnchorButton-ethqdb-1 bofyUK styles__StyledButton-sc-1rfsx88-4 hwpdAW" type="primary">Learn more</a>
+
+      <div class="catalogueItem" style="background: url(./assets/product6.jpg) no-repeat top center;">
+        <div class="catalogueItemOverlay"></div>
+        <div class="catalogueText">
+          <h4>No-fee international transfers</h4>
+          <p>Transfer money worldwide, right away, and with no hidden charges. All currency conversions are at the interbank rate.</p>
+        </div>
+        <div style="text-align: center;">
+          <a class="btn btn-primary btn-lg catalogueButton" href="/send-money-abroad" color="black" class="styles__StyledButton-ethqdb-0-a styles__StyledAnchorButton-ethqdb-1 bofyUK styles__StyledButton-sc-1rfsx88-4 hwpdAW" type="primary">Learn more</a>
+        </div>
       </div>
-    </div>
-    <div class="catalogueItem" style="background: url(./assets/product4.jpg) no-repeat top center;">
-      <div class="catalogueItemOverlay"></div>
-      <div class="catalogueText">
-        <h4>No-fee international transfers</h4>
-        <p>Transfer money worldwide, right away, and with no hidden charges. All currency conversions are at the interbank rate.</p>
-      </div>
-      <div style="text-align: center;">
-        <a class="btn btn-primary btn-lg catalogueButton" href="/send-money-abroad" color="black" class="styles__StyledButton-ethqdb-0-a styles__StyledAnchorButton-ethqdb-1 bofyUK styles__StyledButton-sc-1rfsx88-4 hwpdAW" type="primary">Learn more</a>
-      </div>
-    </div>
-    <div class="catalogueItem" style="background: url(./assets/product5.jfif) no-repeat top center;">
-      <div class="catalogueItemOverlay"></div>
-      <div class="catalogueText">
-        <h4>No-fee international transfers</h4>
-        <p>Transfer money worldwide, right away, and with no hidden charges. All currency conversions are at the interbank rate.</p>
-      </div>
-      <div style="text-align: center;">
-        <a class="btn btn-primary btn-lg catalogueButton" href="/send-money-abroad" color="black" class="styles__StyledButton-ethqdb-0-a styles__StyledAnchorButton-ethqdb-1 bofyUK styles__StyledButton-sc-1rfsx88-4 hwpdAW" type="primary">Learn more</a>
-      </div>
-    </div>
-    <div class="catalogueItem" style="background: url(./assets/product6.jpg) no-repeat top center;">
-      <div class="catalogueItemOverlay"></div>
-      <div class="catalogueText">
-        <h4>No-fee international transfers</h4>
-        <p>Transfer money worldwide, right away, and with no hidden charges. All currency conversions are at the interbank rate.</p>
-      </div>
-      <div style="text-align: center;">
-        <a class="btn btn-primary btn-lg catalogueButton" href="/send-money-abroad" color="black" class="styles__StyledButton-ethqdb-0-a styles__StyledAnchorButton-ethqdb-1 bofyUK styles__StyledButton-sc-1rfsx88-4 hwpdAW" type="primary">Learn more</a>
-      </div>
-    </div>
+  </div>
   </div>
 </section>
+
+
 
 <!-- Separator -->
 <section class="py-auto py-md-5 bg-dark text-white">
@@ -488,7 +499,8 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- AOS -->
+<
 <!-- MY SCRIPTS -->
 <script>
 var prevScrollpos = window.pageYOffset;
@@ -502,6 +514,10 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 </script>
+<script>
+  AOS.init();
+</script>
+
 
 </body>
 </html>

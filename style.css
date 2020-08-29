@@ -385,12 +385,17 @@ hr{
 	padding: 4%  0%;
 }
 
+.animationTest{
+	
+}
 .carouselCatalogue{
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
 	grid-gap: 10px;
 	justify-items: center;
 	padding: 1%;
+	
+		
 }
 
 
@@ -403,6 +408,7 @@ hr{
     position: relative;
     z-index: 2;
     transition: all 0.2s ease-in-out;
+
 }
 
 .catalogueText{
