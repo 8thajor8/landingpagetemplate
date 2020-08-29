@@ -4,6 +4,13 @@ body {
   /*font-family: Arial;*/
 }
 
+.navbar{
+	position: fixed; /* Make it stick/fixed */
+  	top: 0; /* Stay on top */
+  	transition: top 0.6s;
+  	width: 100%;
+  	z-index: 3
+}
 
 .jumbotron{
 	background: url(./assets/jumbotronimage.jpg) no-repeat top center fixed; 
@@ -57,19 +64,24 @@ hr{
 }
 
 
-#separator{
-	font-size: 1.5em;
+.separator{
+	font-size: 1.5rem;
 	font-weight: 200;
 
+}
+
+@media only screen and (max-width: 768px) {
+
+  	.separator{
+		margin: 3%;
+		
+	}
 }
 
 .separatorbox{
 	background-color: rgb(84,175,175);
 }
 
-span{
-	font-weight: 450;
-}
 
 .carimage{
 	height: 60vh;	
@@ -119,6 +131,21 @@ span{
 }
 .featurecard > p{
 	font-weight: 200;
+}
+
+.animate__animated.animate__pulse{
+	--animate-duration: 3s;
+	
+	animation-iteration-count: 10;
+
+}
+
+.effectDelay2{
+	animation-delay: 0.6s;
+}
+
+.effectDelay3{
+	animation-delay:1.5s;
 }
 
 .jumbotext{
@@ -569,5 +596,56 @@ textarea{
 		
 		grid-row-gap: 60px;
 		padding: 10% 6%;
+	}
+}
+
+.sponsorSection{
+	padding: 6%;
+}
+
+.sponsorLogo {
+	width: 100%;
+	color: #000;
+  	filter: gray; /* IE6-9 */
+  	-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  	filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  	padding: 8%; 
+  	transition: all 0.4s linear;
+}
+
+/* Disable grayscale on hover */
+.sponsorLogo:hover {
+ 	-webkit-filter: grayscale(0);
+  	filter: none;
+  	transform: scale(1.03);
+}
+
+footer{
+	padding: 4%;
+	
+}
+
+.footerSlogan{
+	text-align: left;
+}
+.footerLogo{
+	text-align: right;
+}
+
+footer a, footer a:active, footer a:focus, footer a:hover {
+    text-decoration: none;
+    color: #1fc8db;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+
+  	.footerSlogan{
+		margin: 6%;
+		text-align: center;
+	}
+	.footerLogo{
+		margin: 6%;
+		text-align: center;
 	}
 }
