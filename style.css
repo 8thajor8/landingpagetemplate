@@ -1,3 +1,8 @@
+/* for debugging reasons */
+*{
+	/* outline: 1px solid; */
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -156,7 +161,7 @@ hr{
 	background-size: cover;;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: : 1fr 2fr;
+	grid-template-rows: 1fr 2fr;
 	
 }
 
@@ -381,6 +386,7 @@ hr{
 }
 }
 
+/* Concerning the slide part */
 .productCatalogue{
 	padding: 4%  0%;
 }
@@ -388,31 +394,54 @@ hr{
 .animationTest{
 	
 }
+
 .carouselCatalogue{
-	display: grid;
+	height: 450px;
+	display: flex;
+	overflow-x: auto;
+
+	/* display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
 	grid-gap: 10px;
 	justify-items: center;
-	padding: 1%;
+	padding: 1%; */
 	
 		
 }
 
+.carouselCatalogue::-webkit-scrollbar{
+	scroll-behavior: smooth;
+	transition: color 0.3s;
+	width: 0;
+}
+
 
 .catalogueItem{
-
+	max-height: 400px;
+	min-width: 350px;
+	margin-right: 10px;
+	background-size: contain;
 	border-radius: 15px;
 	-webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;
     box-shadow: 0 10px 6px -6px #777;
     position: relative;
     z-index: 2;
-    transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+
+	animation: hoover 50s steps(2000) infinite ;
 
 }
 
+@keyframes hoover {
+	to {
+		transform: translate3d(calc(-600% - 60px) , 0px, 0px);
+	}
+}
+
+
 .catalogueText{
-	padding: 5%;
+	padding: 3%;
 	position: relative;
     z-index: 2;
 
@@ -429,7 +458,8 @@ hr{
 	font-weight: 450;
 	font-size: 1.1em;
 	color: white;
-	margin: 18% 2%;
+	/* sorry for commenting this, couldn't manage to make work with narrow screens */
+	/* margin: 18% 2%; */
 	opacity: 0;
 	transition: all 0.3s linear;
 
